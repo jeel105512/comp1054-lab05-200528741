@@ -1,0 +1,217 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+    /* outline: 1px dotted #333; */
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE *//* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/* ------------------------------------------------------------------------------------ */
+/* Lab-05 */
+/* General text styling: */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../assets/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../assets/Poppins-Regular.ttf);
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+h1,
+h2{
+  letter-spacing: 0.10rem;
+}
+
+header h1{
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+p, li{
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.08rem;
+}
+
+p{
+  line-height: 1.5;
+}
+
+section h2 + p{
+  text-indent: 2rem; /* 2rem => 20px */
+}
+
+/* Links: */
+a{
+  color: #a66;
+}
+
+nav{
+  height: 100%;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2em;
+}
+
+nav ul li{
+  flex: 1;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove the default focus outline from ALL the links on the page. */
+a:focus{
+  outline: none;
+}
+
+nav ul li a{
+  text-decoration: underline;
+  color: #a66;
+  padding: 1em;
+  /* border: 1px solid #a66; */
+  /* I tired to do all borders separate as the border-top property on visited was not being applied */
+  border-top: 1px solid #a66;
+  border-right: 1px solid #a66;
+  border-bottom: 2px solid #a66;
+  border-left: 1px solid #a66;
+
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li a:link{
+  color: #a66;
+}
+
+nav ul li a:visited{
+  color: #764848;
+  border-top: 2px solid #a66;
+  border-bottom: 1px solid #a66;
+}
+
+nav ul li a:focus{
+  border: 2px solid #a66;
+  border-radius: 5px;
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+}
+
+nav ul li a:active{
+  background: #a66;
+  color: #fff;
+}
+
+/* How to do this part:
+   Make it so that external links have the external link icon inserted next to them. */
+
+/* Lists: */
+ul{
+  line-height: 1.5;
+  list-style-type: square;
+}
