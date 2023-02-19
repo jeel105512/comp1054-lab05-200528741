@@ -209,6 +209,13 @@ nav ul li a:active{
 
 /* How to do this part:
    Make it so that external links have the external link icon inserted next to them. */
+   /* reference: https://fontawesome.com/v5/docs/web/advanced/css-pseudo-elements */
+
+section a::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f360"; /* here \f360 is the unicode for new tab icon */
+  padding-left: 0.3em;
+  text-decoration: none;
+}
 
 /* Lists: */
 ul{
